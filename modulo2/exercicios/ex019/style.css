@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* 
+# -> id
+. -> class
+id sobrepõe class
+*/
+
+body {
+    background-color: #baffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #157777;
+}
+h1#principal {
+    text-align: center;
+    background-color: #157777;
+    color: #baffff;
+}
+.basico {
+    color: #00a7a7;
+}
+.intermediario {
+    color: #717715;
+}
+.avancado {
+    color: #771515;
+}

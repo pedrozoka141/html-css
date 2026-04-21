@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Aprendendo a tocar áudios em HTML5</p>
+    <audio preload="auto" controls>
+        <source src="midias/death.mp3" type="audio/mpeg">
+        <p>Seu navegador não carrega áudio. Clique <a href="midias/death.mp3">aqui</a> para fazer o download.</p>
+    </audio>
+</body>
+</html>

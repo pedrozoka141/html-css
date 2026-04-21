@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Lado a Lado</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Isso coloca o texto em cima e os botões embaixo */
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px; /* Dá um espaço entre o texto e os botões */
+        }
+    
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #sim {
+            background-color: greenyellow;
+        }
+
+        #nao {
+            background-color: gold;
+            position: absolute; 
+            transition: all 0.1s ease;
+        }
+
+        .espacador {
+            width: 80px; 
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALEX PEREIRA</h1>
+    <p style="font-size: 25px;">Alex "Poatan" Pereira é o melhor striker atual do UFC?</p>
+    <img src="modulo1/exercicios/ex010/poatan/poatan.png" alt="poatan" style="width: 200px;">
+    
+    <div class="container">
+        <button id="sim" onclick="aceitar()">Sim</button>
+        <div class="espacador">
+            <button id="nao" onmouseover="fuga()">Não</button>
+        </div>
+    </div>
+
+    <script>
+        function aceitar() {
+            window.location.href = "https://www.youtube.com/watch?v=hZ1HKpu_BFk";
+        }
+
+        function fuga() {
+            var botao = document.getElementById("nao");
+
+            var x = Math.random() * (window.innerWidth - 150);
+            var y = Math.random() * (window.innerHeight - 50);
+
+            botao.style.left = x + "px";
+            botao.style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
